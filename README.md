@@ -1,5 +1,5 @@
 #Bank concurrent account using Thread 
-
+the BankAccount class represents a bank account with a balance. For deposit and withdrawal methods, it uses a "ReentrantLock" to synchronize access, so that different threads can execute them concurrently without conflict.
 
 
 import java.util.concurrent.locks.Lock;
