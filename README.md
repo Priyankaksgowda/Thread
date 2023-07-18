@@ -9,14 +9,13 @@ public class BankConcurrent
 {
 	  double balance;
 	  Lock lock;
-
-	  public BankConcurrent() 
+public BankConcurrent() 
 	  {
 	    balance = 0.0;
 	    lock = new ReentrantLock();
 	  }
 
-	  public void deposit(double amount) {
+public void deposit(double amount) {
 	    lock.lock();
 	    try {
 	      balance += amount;
